@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 100px);
+}
+
+.output {
+    background-color: rgba(0, 0, 0, 0.1);
+    grid-column: 1/5;
+    text-align: right;
+    min-height: 110px;
+    max-height: auto;
+}
+
+.span-four {
+    grid-column: span 2;
+}
